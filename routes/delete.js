@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const inventory = require('../data/inventory');
+const inventory = require('./data/inventory');
+
 router.delete('/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const index = inventory.findIndex((t) => t.id === parseInt(id));
@@ -11,4 +12,5 @@ router.delete('/:id', (req, res) => {
     res.json({ message: 'Item deleted successfully' });
     res.status(200).send();
 });
+
 module.exports = router;
