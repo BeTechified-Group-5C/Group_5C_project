@@ -41,7 +41,7 @@ app.use('/', patchProduct);
 //adds PATCH route
 
 app.use('/', deleteProduct);
-//adds delete route
+//adds DELETE route
 
 // Error handler must be last
 app.use(errorHandler);
