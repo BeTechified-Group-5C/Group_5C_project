@@ -32,5 +32,6 @@ const inventory = [
     inStock: false
   }
 ];
+//this is inventory data to be used in the API
 
 module.exports = inventory;

@@ -9,5 +9,6 @@ router.patch('/:id', (req, res) => {
     Object.assign(productEdit, req.body);
     res.status(200).json(productEdit);
 });
+//creates PATCH route to be imported to server.js
 
 module.exports = router;

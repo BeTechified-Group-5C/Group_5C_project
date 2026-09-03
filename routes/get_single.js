@@ -8,5 +8,6 @@ router.get('/:id', (req, res) => {
     if(!product) return res.status(404).json({error: "Not found"});
     res.status(200).json(product);
 });
+//creates GET single route to be imported to server.js
 
 module.exports = router;

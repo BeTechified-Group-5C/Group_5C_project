@@ -21,5 +21,6 @@ router.post('/', (req, res) => {
     inventory.push(newItem);
     res.status(201).json(newItem);
 });
+//creates POST route to be imported to server.js
 
 module.exports = router;

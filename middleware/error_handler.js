@@ -4,5 +4,6 @@ const errorHandler = (err, req, res, next) => {
     message: err.message || "Something went wrong"
   });
 };
+//creates error handling middleware to be imported to server.js
 
 module.exports = errorHandler;
