@@ -82,7 +82,7 @@ The store ships with 4 seed products and lives only in memory — data resets wh
 | GET | `/:id` | Return one product by id | — | `200` + object | `404` if not found |
 | POST | `/` | Create a new product | `name, category, quantity, price` required; `inStock` optional | `201` + created object | `400` if a required field is missing |
 | PATCH | `/:id` | Update fields on an existing product | Any subset of product fields | `200` + updated object | `404` if not found |
-| DELETE | `/:id` | Remove a product by id | — | `200` | `404` if not found |
+| DELETE | `/:id` | Remove a product by id | — | `204` | `404` if not found |
 
 ### Example: creating a product
 
